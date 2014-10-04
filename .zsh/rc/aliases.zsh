@@ -40,6 +40,18 @@ alias em='emacsclient -n -a ""'
 alias es="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
 alias E='es'
 
+# YUM
+alias yumc='sudo yum clean all' # Cleans the cache.
+alias yumh='yum history' # Displays history.
+alias yumi='sudo yum install' # Installs package(s).
+alias yuml='yum list' # Lists packages.
+alias yumL='yum list installed' # Lists installed packages.
+alias yumq='yum info' # Displays package information.
+alias yumr='sudo yum remove' # Removes package(s).
+alias yums='yum search' # Searches for a package.
+alias yumu='sudo yum update' # Updates packages.
+alias yumU='sudo yum upgrade' # Upgrades packages.
+
 # General
 alias cp='cp -RPv'
 alias la='ls -a'
