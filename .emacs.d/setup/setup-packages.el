@@ -46,6 +46,7 @@
        'rainbow-mode              ; Colorize color names in buffers.
        'rainbow-delimiters        ; rainbow delimiters mode.
        'recentf                   ; is a minor mode that builds a list of recently opened files.
+       'rpm-spec-mode             ; is a mode for creating RPM spec files.
        'slime                     ; Emacs mode for Common Lisp development.
        'smex                      ; M-x enhancement for Emacs. Built on top of IDO.
        'volatile-highlights       ; highlights changes to the buffer.
