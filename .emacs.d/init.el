@@ -37,6 +37,7 @@
 (require 'setup-markdown)
 (require 'setup-org)
 (require 'setup-recentf)
+(require 'setup-rpm.spec)
 (require 'setup-slime)
 (require 'setup-smex)
 (require 'setup-server)
