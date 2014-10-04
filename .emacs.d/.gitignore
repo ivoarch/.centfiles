@@ -1,0 +1,10 @@
+/auto-save-list
+/swank
+/elpa
+/.session
+/xkcd
+/url
+
+/ac-comphist.dat
+*~
+\#*
