@@ -1,0 +1,89 @@
+#
+# ZSHELL aliases
+#
+
+# Fast navigation
+alias ..='cd ..'
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
+alias cd.....='cd ../../../..'
+alias cd/='cd /'
+
+alias 1='cd -'
+alias 2='cd +2'
+alias 3='cd +3'
+alias 4='cd +4'
+alias 5='cd +5'
+alias 6='cd +6'
+alias 7='cd +7'
+alias 8='cd +8'
+alias 9='cd +9'
+
+alias d='dirs -v | head -10'
+
+# Compile/Sources
+alias cm='./configure && make'
+alias mmi='make && sudo make install'
+alias pmmi='perl Makefile.PL && mmi'
+alias maek='make'
+alias mkae='make'
+alias pipr='pip install --no-deps --ignore-installed'
+
+# Emacs
+alias emacs='emacsclient -ca'
+alias ec='emacsclient -c'
+alias et='emacsclient -t'
+alias eamcs='emacs'
+alias emcs='emacs'
+alias em='emacsclient -n -a ""'
+alias es="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
+alias E='es'
+
+# General
+alias cp='cp -RPv'
+alias la='ls -a'
+alias lsa='ls -lah'
+alias l='ls -la'
+alias ll='ls -l'
+alias ls='ls -Xp --color=auto'
+alias mk='mkdir -p'
+alias mkdir='mk'
+alias mv='mv -i'
+alias wget='wget -c'
+alias history='fc -l 1'
+alias h='history'
+alias ssh='ssh -X'
+alias grep='grep --color=auto'
+alias free='free -m'
+alias open='xdg-open'
+alias c='clear'
+alias q='exit'
+alias Q='q'
+alias t='touch'
+alias j='jobs'
+
+# Network
+alias myip='curl ifconfig.me'
+alias fw='sudo iptables -L'
+alias myserver='python -m SimpleHTTPServer 8000'
+alias speedtest='speedtest-cli --simple'
+
+# No correct commands
+alias man='nocorrect man'
+alias mv='nocorrect mv'
+alias mysql='nocorrect mysql'
+alias mkdir='nocorrect mkdir'
+alias sudo='nocorrect sudo'
+
+# Global
+alias -g H="| head"
+alias -g T="| tail"
+alias -g G="| grep"
+alias -g L="| less"
+alias -g M="| most"
+alias -g B="&|"
+alias -g LL="2>&1 | less"
+alias -g CA="2>&1 | cat -A"
+alias -g NE="2> /dev/null"
+alias -g NUL="> /dev/null 2>&1"
