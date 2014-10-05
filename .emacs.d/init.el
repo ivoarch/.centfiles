@@ -27,7 +27,6 @@
 (require 'setup-clipboard)
 (require 'setup-dired)
 (require 'setup-deft)
-(require 'setup-elfeed)
 (require 'setup-files)
 (require 'setup-flycheck)
 (require 'setup-ido)

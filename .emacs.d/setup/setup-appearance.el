@@ -25,7 +25,7 @@
             '(font . "DejaVu Sans Mono-10"))
 
 ;; Load theme
-(load-theme 'zenburn t)
+;(load-theme 'zenburn t)
 
 ;; cursor style
 (setq-default cursor-type 'bar)
