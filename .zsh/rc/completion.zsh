@@ -2,6 +2,9 @@
 # ZSHELL completion
 #
 
+# Add custom path for the completions (echo $FPATH)
+[ -d "$HOME/.zsh/completions/" ] && fpath=($HOME/.zsh/completions $fpath)
+
 # Load completions
 autoload -U compinit
 compinit
