@@ -28,6 +28,7 @@
        'dired-details             ; hide/show the details of each file or directory in DiredMode.
        'elfeed                    ; An Emacs web feeds client.
 ;       'elscreen                  ; GNU Emacs window session manager.
+       'epresent                  ; Simple presentation mode for Emacs Org-mode
        'flycheck                  ; fly syntax checking for GNU Emacs.
        'flx-ido                   ; Fuzzy matching for Emacs ... a la Sublime Text.
        'guru-mode                 ; The Emacs guru way
@@ -52,7 +53,7 @@
        'volatile-highlights       ; highlights changes to the buffer.
        'xkcd                      ; Read xkcd from emacs.
        'yasnippet                 ; Template system for Emacs.
-       'zenburn-theme             ; The Zenburn colour theme ported to Emacs.
+;       'zenburn-theme             ; The Zenburn colour theme ported to Emacs.
        'web-mode                  ; web template editing mode for emacs.
        ))
 
