@@ -29,6 +29,7 @@
 (require 'setup-deft)
 (require 'setup-files)
 (require 'setup-flycheck)
+(require 'setup-fullscreen)
 (require 'setup-ido)
 (require 'setup-js-mode)
 (require 'setup-key-bindings)
