@@ -57,6 +57,20 @@ zstyle ':completion:*:*:killall:*' menu yes select
 zstyle ':completion:*:killall:*' force-list always
 
 # SSH Completion
+# use /etc/hosts and known_hosts for hostname completion
+[ -r ~/.ssh/known_hosts ] && _ssh_hosts=(${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[\|]*}%%\ *}%%,*}) || _ssh_hosts=()
+[ -r ~/.ssh/config ] && _ssh_config=($(cat ~/.ssh/config | sed -ne 's/Host[=\t ]//p')) || _ssh_config=()
+[ -r /etc/hosts ] && : ${(A)_etc_hosts:=${(s: :)${(ps:\t:)${${(f)~~"$(</etc/hosts)"}%%\#*}##[:blank:]#[^[:blank:]]#}}} || _etc_hosts=()
+hosts=(
+    "$_ssh_config[@]"
+    "$_ssh_hosts[@]"
+    "$_etc_hosts[@]"
+    "$HOST"
+    localhost
+)
+zstyle ':completion:*:hosts' hosts $hosts
+zstyle ':completion:*' users off
+
 zstyle ':completion:*:scp:*' tag-order \
     'hosts:-host hosts:-domain:domain hosts:-ipaddr:IP\ address *'
 zstyle ':completion:*:scp:*' group-order \
@@ -71,5 +85,5 @@ zstyle ':completion:*:(ssh|scp):*:hosts-domain' ignored-patterns \
     '<->.<->.<->.<->' '^*.*' '*@*'
 zstyle ':completion:*:(ssh|scp):*:hosts-ipaddr' ignored-patterns \
     '^<->.<->.<->.<->' '127.0.0.<->'
-zstyle ':completion:*:(ssh|scp):*:users' ignored-patterns \
-    adm avahi-autoipd bin daemon dbus gdm halt haldaemon lp named mail postfix rtkit shutdown sync
+#zstyle ':completion:*:(ssh|scp):*:users' ignored-patterns \
+#    adm avahi-autoipd bin daemon dbus gdm halt haldaemon lp named mail postfix rtkit shutdown sync
