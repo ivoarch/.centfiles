@@ -74,6 +74,16 @@ alias q='exit'
 alias Q='q'
 alias t='touch'
 alias j='jobs'
+alias extract='dtrx'
+
+# Auto extension stuff
+alias -s {ogg,mp3,wav,wma}="mplayer"
+alias -s {avi,mpeg,mpg,mov,m2v,flv}="mplayer"
+alias -s {png,gif,jpg,jpeg}="gthumb"
+alias -s {doc,pdf}="$EDITOR"
+alias -s {txt,c,h,conf,tex}="$EDITOR"
+alias -s {html,php,com,net,org,gov}="$BROWSER"
+alias -s torrent='transmission-gtk'
 
 # Network
 alias myip='curl ifconfig.me'
