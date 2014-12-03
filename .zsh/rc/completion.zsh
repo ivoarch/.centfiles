@@ -86,4 +86,4 @@ zstyle ':completion:*:(ssh|scp):*:hosts-domain' ignored-patterns \
 zstyle ':completion:*:(ssh|scp):*:hosts-ipaddr' ignored-patterns \
     '^<->.<->.<->.<->' '127.0.0.<->'
 #zstyle ':completion:*:(ssh|scp):*:users' ignored-patterns \
-#    adm avahi-autoipd bin daemon dbus gdm halt haldaemon lp named mail postfix rtkit shutdown sync
+#adm avahi-autoipd bin daemon dbus gdm halt haldaemon lp named mail postfix rtkit shutdown sync
