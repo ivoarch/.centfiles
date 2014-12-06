@@ -1,8 +1,8 @@
 #
-# ZSHELL function top
+# ZSHELL function top10
 #
 
-top() {
+top10() {
 # Clear screen, print header
 resize; clear; echo; date;
 
