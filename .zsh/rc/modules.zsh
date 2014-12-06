@@ -1,5 +1,5 @@
 #
-# ZSHELL autoload
+# ZSHELL modules
 #
 
 # Functions to make it easier to type URLs as command line arguments.
