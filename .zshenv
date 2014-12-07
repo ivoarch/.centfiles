@@ -2,15 +2,27 @@
 # Used for setting some useful environment variables
 
 # Profile
+export MAIL="ivkuzev[at]gmail[dot]com"
+export PGPPATH="$HOME/.gnupg"
 export PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$HOME/bin"
 export XDG_CONFIG_HOME="$HOME/.config"
-export TERM="xterm-256color"
 export BROWSER="firefox"
-export EDITOR="emacs"
 OS=$(uname -s); export OS
 
+# default env vars (if not set)
+if [[ -z "$TERM" ]]; then
+    export TERM=xterm-256color
+fi
+if [[ -z "$EDITOR" ]]; then
+    export EDITOR=emacs
+    export VISUAL=$EDITOR
+fi
+
+export DISPLAY=":0.0"
+export MANWIDH="80"
+
 # Encoding
-export LANG="en_US.UTF-8"
+export LANG="us_US.UTF-8"
 export LC_ALL=$LANG
 export LC_COLLATE=$LANG
 export LC_CTYPE=$LANG

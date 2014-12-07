@@ -2,24 +2,9 @@
 # ZSHELL aliases
 #
 
-# Fast navigation
-alias ..='cd ..'
-alias cd..='cd ..'
-alias cd...='cd ../..'
-alias cd....='cd ../../..'
-alias cd.....='cd ../../../..'
-alias cd/='cd /'
-
-alias 1='cd -'
-alias 2='cd +2'
-alias 3='cd +3'
-alias 4='cd +4'
-alias 5='cd +5'
-alias 6='cd +6'
-alias 7='cd +7'
-alias 8='cd +8'
-alias 9='cd +9'
-
+# Push and pop directories on directory stack
+alias pu='pushd'
+alias po='popd'
 alias d='dirs -v | head -10'
 
 # Compile/Sources
@@ -66,7 +51,6 @@ alias wget='wget -c'
 alias history='fc -l 1'
 alias h='history'
 alias ssh='ssh -X'
-alias grep='grep --color=auto'
 alias free='free -m'
 alias open='xdg-open'
 alias c='clear'
@@ -75,6 +59,15 @@ alias Q='q'
 alias t='touch'
 alias j='jobs'
 alias extract='dtrx'
+
+# grep
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias agrep='ack-grep --color'
+
+# make rm verbose and ask for confimation before deletion
+alias rm='rm -vi'
 
 # Auto extension stuff
 alias -s {ogg,mp3,wav,wma}="mplayer"
@@ -88,7 +81,6 @@ alias -s torrent='transmission-gtk'
 # Network
 alias myip='curl ifconfig.me'
 alias fw='sudo iptables -L'
-alias myserver='python -m SimpleHTTPServer 8000'
 alias speedtest='speedtest-cli --simple'
 
 # No correct commands
