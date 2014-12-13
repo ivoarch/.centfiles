@@ -88,9 +88,11 @@ alias -s torrent='transmission-gtk'
 
 # Network
 alias myip='curl ifconfig.me'
-alias fw='sudo iptables -L'
 alias myserver='python -m SimpleHTTPServer 8000'
-alias speedtest='speedtest-cli --simple'
+alias myspeed='speedtest-cli --simple'
+# Download files from a web directory
+alias myget="wget -r -nd -l 1 -A"
+alias ipsort='sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4'
 
 # No correct commands
 alias man='nocorrect man'
