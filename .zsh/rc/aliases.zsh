@@ -27,15 +27,23 @@ alias E='es'
 
 # YUM
 alias yumc='sudo yum clean all' # Cleans the cache.
-alias yumh='yum history' # Displays history.
-alias yumi='sudo yum install' # Installs package(s).
-alias yuml='yum list' # Lists packages.
+alias yumh='yum history'        # Displays history.
+alias yumi='sudo yum install'   # Installs package(s).
+alias yuml='yum list'           # Lists packages.
 alias yumL='yum list installed' # Lists installed packages.
-alias yumq='yum info' # Displays package information.
-alias yumr='sudo yum remove' # Removes package(s).
-alias yums='yum search' # Searches for a package.
-alias yumu='sudo yum update' # Updates packages.
-alias yumU='sudo yum upgrade' # Upgrades packages.
+alias yumq='yum info'           # Displays package information.
+alias yumr='sudo yum remove'    # Removes package(s).
+alias yums='yum search'         # Searches for a package.
+alias yumu='sudo yum update'    # Updates packages.
+alias yumU='sudo yum upgrade'   # Upgrades packages.
+
+# Adding, Enabling, and Disabling a Yum Repository.
+alias addrepo='sudo yum-config-manager --add-repo'
+alias enablerepo='sudo yum-config-manager --enable'
+alias disablerepo='sudo yum-config-manager --disable'
+
+# Show priority scores.
+alias priority='sed -n -e "/^\[/h; /priority *=/{ G; s/\n/ /; s/ity=/ity = /; p }" /etc/yum.repos.d/*.repo | sort -k3n'
 
 # General
 alias cp='cp -RPv'
@@ -81,6 +89,7 @@ alias -s torrent='transmission-gtk'
 # Network
 alias myip='curl ifconfig.me'
 alias fw='sudo iptables -L'
+alias myserver='python -m SimpleHTTPServer 8000'
 alias speedtest='speedtest-cli --simple'
 
 # No correct commands
