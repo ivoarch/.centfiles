@@ -1,5 +1,5 @@
-#!/bin/sh
-# More opcional apps for (Centos 6...)
+#!/bin/bash
+# Opcional apps for (Centos 6...)
 
 # Administration
 yum install -y gnome-system-monitor gnome-system-log htop ps_mem seahorse seahorse-plugins keepassx system-config-language keychecker rpmreaper yum-utils beesu policycoreutils-gui system-config-firewall inotify-tools rpmdevtools rpm-build redhat-rpm-config ntsysv rpmconf
@@ -50,12 +50,15 @@ yum install -y guake screen xterm rxvt-unicode-256color
 yum install -y transmission-gtk
 
 # Printer
-yum Install -y cups system-config-printer
+yum install -y cups system-config-printer
 
 # Install PIL with JPEG support
 yum install -y libjpeg-turbo libjpeg-turbo-devel
 
 # Install OpenJDK 1.7.0
 yum install -y java-1.7.0-openjdk java-1.7.0-openjdk-devel
+
+# Live CD
+yum install -y livecd-tools python-imgcreate system-config-kickstart
 
 exit
