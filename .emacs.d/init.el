@@ -40,6 +40,7 @@
 (require 'setup-rpm.spec)
 (require 'setup-slime)
 (require 'setup-smex)
+(require 'setup-sh-mode)
 (require 'setup-server)
 (require 'setup-usability)
 (require 'setup-zsh)

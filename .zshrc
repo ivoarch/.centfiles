@@ -2,8 +2,10 @@
 # $ cat ~/.zshrc
 #
 
+export ZDOTDIR=~/.zsh
+
 # Split ZSHELL into multiple scripts
-for i (~/.zsh/{rc,functions}/*.zsh) {
+for i (~/.zsh/{rc,functions,plugins}/*.zsh) {
     source $i
 }
 

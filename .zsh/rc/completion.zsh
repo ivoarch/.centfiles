@@ -27,6 +27,7 @@ zstyle ':completion:*:warnings' format 'No matches for: %d'
 zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*:manuals' separate-sections true
+zstyle ':completion:*:manuals.(^1*)' insert-sections true
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*:default' list-prompt'%S%M matches%s'
 zstyle ':completion:*:prefix:*' add-space true

@@ -5,7 +5,6 @@
 # Push and pop directories on directory stack
 alias pu='pushd'
 alias po='popd'
-alias d='dirs -v | head -10'
 
 # Compile/Sources
 alias cm='./configure && make'
@@ -25,33 +24,9 @@ alias em='emacsclient -n -a ""'
 alias es="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
 alias E='es'
 
-# YUM
-alias yumc='sudo yum clean all' # Cleans the cache.
-alias yumh='yum history'        # Displays history.
-alias yumi='sudo yum install'   # Installs package(s).
-alias yuml='yum list'           # Lists packages.
-alias yumL='yum list installed' # Lists installed packages.
-alias yumq='yum info'           # Displays package information.
-alias yumr='sudo yum remove'    # Removes package(s).
-alias yums='yum search'         # Searches for a package.
-alias yumu='sudo yum update'    # Updates packages.
-alias yumU='sudo yum upgrade'   # Upgrades packages.
-
-# Adding, Enabling, and Disabling a Yum Repository.
-alias addrepo='sudo yum-config-manager --add-repo'
-alias enablerepo='sudo yum-config-manager --enable'
-alias disablerepo='sudo yum-config-manager --disable'
-
-# Show priority scores.
-alias priority='sed -n -e "/^\[/h; /priority *=/{ G; s/\n/ /; s/ity=/ity = /; p }" /etc/yum.repos.d/*.repo | sort -k3n'
-
 # General
+alias less='less -RX'
 alias cp='cp -RPv'
-alias la='ls -a'
-alias lsa='ls -lah'
-alias l='ls -la'
-alias ll='ls -l'
-alias ls='ls -Xp --color=auto'
 alias mk='mkdir -p'
 alias mkdir='mk'
 alias mv='mv -i'
@@ -67,6 +42,14 @@ alias Q='q'
 alias t='touch'
 alias j='jobs'
 alias extract='dtrx'
+
+# ls helpers
+alias ls='ls -Xp --color=auto'
+alias la='ls -a'
+alias l.='ls -d .*'
+alias ll='ls -lh'
+alias l='ls -lh'
+alias lr='ls -lR'
 
 # grep
 alias grep='grep --color=auto'
@@ -88,11 +71,7 @@ alias -s torrent='transmission-gtk'
 
 # Network
 alias myip='curl ifconfig.me'
-alias myserver='python -m SimpleHTTPServer 8000'
 alias myspeed='speedtest-cli --simple'
-# Download files from a web directory
-alias myget="wget -r -nd -l 1 -A"
-alias ipsort='sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4'
 
 # No correct commands
 alias man='nocorrect man'
