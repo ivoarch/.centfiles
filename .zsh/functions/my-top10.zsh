@@ -2,7 +2,7 @@
 # ZSHELL function top10
 #
 
-top10() {
+my-top10() {
 # Clear screen, print header
 resize; clear; echo; date;
 

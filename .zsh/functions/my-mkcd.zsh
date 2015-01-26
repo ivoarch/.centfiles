@@ -3,7 +3,7 @@
 #
 
 # Make directory and cd inside it
-function mkcd {
+my-mkcd() {
     mkdir -p "$*"
     cd "$*"
 }

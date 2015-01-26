@@ -3,7 +3,7 @@
 #
 
 if command -v colordiff > /dev/null 2>&1; then
-    alias diff="colordiff -Nuar"
+    alias my-diff="colordiff -Nuar"
 else
-    alias diff="diff -Nuar"
+    alias my-diff="diff -Nuar"
 fi

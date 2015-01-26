@@ -2,7 +2,7 @@
 # ZSHELL function world time
 #
 
-wtime () {
+my-worldtime () {
     alias datetime="date +%a-%d-%b,%H:%M"
     clear;
     echo -e 'What time is it in Europa?'

@@ -13,7 +13,7 @@
 # The MIT License (MIT) <http://psyrendust.mit-license.org/2014/license.html>
 # ------------------------------------------------------------------------------
 
-server() {
+my-server() {
     local port="${1:-8000}"
 
 		open "http://localhost:${port}/"

@@ -3,7 +3,7 @@
 #
 
 # Packing in the archive
-pk () {
+my-pk () {
     if [ $1 ] ; then
         case $1 in
             tbz) tar cjvf $2.tar.bz2 $2 ;;
