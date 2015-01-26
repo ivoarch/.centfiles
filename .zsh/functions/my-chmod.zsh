@@ -1,7 +1,3 @@
-#
-# ZSHELL function gmod
-#
-
 my_chmod() {
-    stat --format "%n %a" $* | column -t;
+  stat --format "%n %a" $* | column -t;
 }

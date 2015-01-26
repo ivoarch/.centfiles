@@ -1,7 +1,3 @@
-#
-# ZSHELL function world time
-#
-
 my-worldtime () {
     alias datetime="date +%a-%d-%b,%H:%M"
     clear;
