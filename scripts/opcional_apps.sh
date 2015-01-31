@@ -2,7 +2,7 @@
 # Opcional apps for (Centos 6...)
 
 # Administration
-yum install -y gnome-system-monitor gnome-system-log htop ps_mem seahorse seahorse-plugins keepassx system-config-language keychecker rpmreaper yum-utils beesu policycoreutils-gui system-config-firewall inotify-tools rpmdevtools rpm-build redhat-rpm-config ntsysv rpmconf
+yum install -y gnome-system-monitor gnome-system-log htop ps_mem seahorse seahorse-plugins keepassx system-config-language keychecker rpmreaper yum-utils beesu policycoreutils-gui system-config-firewall inotify-tools rpmdevtools rpm-build redhat-rpm-config ntsysv rpmconf rpmrebuild
 
 # Accessories
 yum install -y gcalctool gnote file-roller nano

@@ -1,1 +1,4 @@
+%_signature gpg
+%_gpg_name Ivaylo Kuzev
 %_topdir %(echo $HOME)/rpmbuild
+
