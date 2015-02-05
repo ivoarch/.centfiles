@@ -1,3 +1,3 @@
-my_chmod() {
+my-chmod() {
   stat --format "%n %a" $* | column -t;
 }
