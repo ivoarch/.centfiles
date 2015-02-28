@@ -17,3 +17,9 @@ alias disablerepo='sudo yum-config-manager --disable'
 
 # Show priority scores.
 alias priority='sed -n -e "/^\[/h; /priority *=/{ G; s/\n/ /; s/ity=/ity = /; p }" /etc/yum.repos.d/*.repo | sort -k3n'
+
+# Verify the list of gpg public keys in RPM DB.
+alias rpm_pubkeys="rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'"
+
+# Display last installed packages.
+alias last-installed='rpm -q --all --last | less'
