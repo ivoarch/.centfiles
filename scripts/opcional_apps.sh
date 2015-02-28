@@ -10,6 +10,9 @@ yum install -y gcalctool gnote file-roller nano
 # Archives
 yum install -y p7zip p7zip-plugins unrar
 
+# Backups
+yum install -y duplicity duply python-paramiko
+
 # Compiz
 yum install -y desktop-effects compiz-gnome
 
