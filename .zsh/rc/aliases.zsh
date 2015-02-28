@@ -57,6 +57,12 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias agrep='ack-grep --color'
 
+# Dig aliases
+alias digs='dig +short'
+alias digc='dig +short CNAME'
+alias digns='dig +short NS'
+alias digmx='dig +short MX'
+
 # make rm verbose and ask for confimation before deletion
 alias rm='rm -vi'
 
@@ -79,15 +85,4 @@ alias mv='nocorrect mv'
 alias mysql='nocorrect mysql'
 alias mkdir='nocorrect mkdir'
 alias sudo='nocorrect sudo'
-
-# Global
-alias -g H="| head"
-alias -g T="| tail"
-alias -g G="| grep"
-alias -g L="| less"
-alias -g M="| most"
-alias -g B="&|"
-alias -g LL="2>&1 | less"
-alias -g CA="2>&1 | cat -A"
-alias -g NE="2> /dev/null"
-alias -g NUL="> /dev/null 2>&1"
+alias git='nocorrect git'

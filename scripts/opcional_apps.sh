@@ -32,7 +32,7 @@ yum install -y ls_sensors hddtemp
 yum install -y gnome-games gnome-games-extra fortune-mod cowsay
 
 # Server
-yum install -y sshpass filezilla vsftpd httpd noip lighttpd
+yum install -y sshpass filezilla lftp vsftpd httpd noip lighttpd
 
 # Media
 yum install -y audacity brasero vlc npapi-vlc clementine rhythmbox mplayer mencoder ffmpeg gtk-recordmydesktop openshot radiotray
