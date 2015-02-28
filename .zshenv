@@ -22,17 +22,17 @@ export DISPLAY=":0.0"
 export MANWIDH="80"
 
 # Encoding
-export LANG="us_US.UTF-8"
-export LC_ALL=$LANG
-export LC_COLLATE=$LANG
-export LC_CTYPE=$LANG
-export LC_MESSAGES=$LANG
-export LC_MONETARY=$LANG
-export LC_NUMERIC=$LANG
-export LC_TIME=$LANG
-export LC_NAME=$LANG
-export LC_TELEPHONE=$LANG
-export LESSCHARSET="UTF-8"
+#export LANG="us_US.UTF-8"
+#export LC_ALL=$LANG
+#export LC_COLLATE=$LANG
+#export LC_CTYPE=$LANG
+#export LC_MESSAGES=$LANG
+#export LC_MONETARY=$LANG
+#export LC_NUMERIC=$LANG
+#export LC_TIME=$LANG
+#export LC_NAME=$LANG
+#export LC_TELEPHONE=$LANG
+#export LESSCHARSET="UTF-8"
 
 # Colorized_manpages
 export LESS_TERMCAP_mb=$'\E[01;31m' # begin blinking

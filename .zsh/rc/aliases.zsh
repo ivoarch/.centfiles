@@ -1,7 +1,3 @@
-#
-# ZSHELL aliases
-#
-
 # Push and pop directories on directory stack
 alias pu='pushd'
 alias po='popd'
@@ -74,10 +70,6 @@ alias -s {doc,pdf}="$EDITOR"
 alias -s {txt,c,h,conf,tex}="$EDITOR"
 alias -s {html,php,com,net,org,gov}="$BROWSER"
 alias -s torrent='transmission-gtk'
-
-# Network
-alias myip='curl ifconfig.me'
-alias myspeed='speedtest-cli --simple'
 
 # No correct commands
 alias man='nocorrect man'
