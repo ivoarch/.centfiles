@@ -1,4 +1,4 @@
-''#!/bin/bash
+#!/bin/bash
 # Opcional apps for (Centos 6...)
 
 # Administration

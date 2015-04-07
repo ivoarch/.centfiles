@@ -25,4 +25,4 @@ alias rpm_pubkeys="rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{s
 alias last-installed='rpm -q --all --last | less'
 
 # Display the installed rpm list with their size.
-alias rpmsize "rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -n -r | less"
+alias rpmsize="rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -n -r | less"
