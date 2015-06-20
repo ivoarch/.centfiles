@@ -10,6 +10,12 @@ alias yums='yum search'         # Searches for a package.
 alias yumu='sudo yum update'    # Updates packages.
 alias yumU='sudo yum upgrade'   # Upgrades packages.
 
+# Rebuilding rpmdb
+
+rpmdb-rebuild () {
+  su -c 'rm -f /var/lib/rpm/__db*; rpm --rebuilddb -v -v; yum clean all; yum update'
+}
+
 # Adding, Enabling, and Disabling a Yum Repository.
 alias addrepo='sudo yum-config-manager --add-repo'
 alias enablerepo='sudo yum-config-manager --enable'
