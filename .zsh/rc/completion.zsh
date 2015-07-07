@@ -57,6 +57,8 @@ zstyle ':completion:*:kill:*' command 'ps -u $(whoami) -o pid,%cpu,tty,cputime,c
 zstyle ':completion:*:*:killall:*' menu yes select
 zstyle ':completion:*:killall:*' force-list always
 
+zstyle ':completion:*:processes-names' command 'ps axho command'
+
 # SSH Completion
 # use /etc/hosts and known_hosts for hostname completion
 [ -r ~/.ssh/known_hosts ] && _ssh_hosts=(${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[\|]*}%%\ *}%%,*}) || _ssh_hosts=()

@@ -6,6 +6,10 @@
 alias pu='pushd'
 alias po='popd'
 
+# copy current working directory to clipboard
+alias cwd="pwd | tr -d '\n' | xsel -b"
+alias copy="xsel -b"
+
 # Compile/Sources
 alias cm='./configure && make'
 alias mmi='make && sudo make install'
@@ -37,6 +41,7 @@ alias ssh='ssh -X'
 alias free='free -m'
 alias open='xdg-open'
 alias c='clear'
+alias cc='cd;clear'
 alias q='exit'
 alias Q='q'
 alias t='touch'
