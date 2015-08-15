@@ -1,17 +1,18 @@
 # YUM
+alias yumd='yumdownloader'      # downloading RPMs
 alias yumc='sudo yum clean all' # Cleans the cache.
 alias yumh='yum history'        # Displays history.
 alias yumi='sudo yum install'   # Installs package(s).
 alias yuml='yum list'           # Lists packages.
 alias yumL='yum list installed' # Lists installed packages.
 alias yumq='yum info'           # Displays package information.
-alias yumr='sudo yum remove'    # Removes package(s).
-alias yums='yum search'         # Searches for a package.
+alias yumr='sudo yum -C remove' # Removes package(s).
+alias yums='yum -C search'      # Searches for a package.
 alias yumu='sudo yum update'    # Updates packages.
 alias yumU='sudo yum upgrade'   # Upgrades packages.
+alias yump='sudo yum provides'  # Find out which package provides some feature or file.
 
 # Rebuilding rpmdb
-
 rpmdb-rebuild () {
   su -c 'rm -f /var/lib/rpm/__db*; rpm --rebuilddb -v -v; yum clean all; yum update'
 }
