@@ -12,6 +12,9 @@ alias yumu='sudo yum update'    # Updates packages.
 alias yumU='sudo yum upgrade'   # Upgrades packages.
 alias yump='sudo yum provides'  # Find out which package provides some feature or file.
 
+# clean incomplete or aborted yum transactions
+alias yum-complete-transaction='sudo yum-complete-transaction --cleanup-only'
+
 # Rebuilding rpmdb
 rpmdb-rebuild () {
   su -c 'rm -f /var/lib/rpm/__db*; rpm --rebuilddb -v -v; yum clean all; yum update'
