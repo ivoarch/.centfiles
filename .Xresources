@@ -1,0 +1,45 @@
+Xft.antialias:  1
+Xft.autohint:   1
+Xft.dpi:        96
+Xft.hinting:    1
+Xft.hintstyle:  hintfull
+Xft.lcdfilter:  lcddefault
+Xft.rgba:       rgb
+
+URxvt*loginShell: true
+
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*scrollBar_floating: false
+
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+
+URxvt.perl-ext-common: default,clipboard,url-select,font-size
+
+URxvt.url-select.launcher:  firefox
+URxvt.url-select.underline: true
+URxvt.keysym.C-i:           perl:url-select:select_next
+
+URxvt.keysym.C-equal : perl:font-size:increase
+URxvt.keysym.C-minus : perl:font-size:decrease
+
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+!URxvt.tabbed.new-button: true
+!URxvt.tabbed.autohide: true
+
+!URxvt.keysym.Control-t: perl:tabbedex:new_tab
+!URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
+!URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt*letterSpace: -1
+URxvt*font: xft:PT Mono-11
+URxvt*boldFont: xft:PT Mono-11
+URxvt*italicFont: xft:PT Mono-11
+URxvt*boldItalicFont: xft:PT Mono-11
