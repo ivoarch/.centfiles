@@ -36,3 +36,8 @@ alias last-installed='rpm -q --all --last | less'
 
 # Display the installed rpm list with their size.
 alias rpmsize="rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -n -r | less"
+
+# (Re)build RPM packages
+alias build='rpmbuild --ba'
+alias rebuild='rpmbuild --rebuild'
+alias sign='rpm --addsign'

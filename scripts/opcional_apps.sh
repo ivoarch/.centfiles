@@ -41,7 +41,7 @@ yum install -y audacity brasero vlc npapi-vlc clementine rhythmbox mplayer menco
 yum install -y nautilus-actions nautilus-image-converter nautilus-open-terminal nautilus-sendto nautilus-beesu-manager
 
 # Network - monitoring tool
-yum install -y nmap nmap-frontend dsniff ettercap tcpdump sslstrip wireshark-gnome nload
+yum install -y nmap nmap-frontend dsniff ettercap tcpdump sslstrip wireshark-gnome nload arp-scan
 
 # Fonts
 yum install -y terminus-fonts-console
