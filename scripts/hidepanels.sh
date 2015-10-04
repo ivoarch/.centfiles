@@ -1,5 +1,5 @@
 #!/bin/bash
-# source: http://www.linuxim.ru/viewtopic.php?f=95&t=622
+# source: https://askubuntu.com/questions/34010/keyboard-shortcut-to-hide-unhide-the-panel
 
 count=0
 while read line
