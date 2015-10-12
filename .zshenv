@@ -21,6 +21,12 @@ fi
 export DISPLAY=":0.0"
 export MANWIDH="80"
 
+# Setup Go
+export GOROOT=$HOME/.go
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/.gocode
+export PATH=$HOME/.gocode/bin:$PATH
+
 # Encoding
 #export LANG="us_US.UTF-8"
 #export LC_ALL=$LANG
