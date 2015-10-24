@@ -29,7 +29,6 @@ alias es="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
 alias E='es'
 
 # General
-alias less='less -RX'
 alias cp='cp -RPv'
 alias mk='mkdir -p'
 alias mkdir='mk'
@@ -56,12 +55,6 @@ alias ll='ls -lh'
 alias l='ls -lh'
 alias lr='ls -lR'
 
-# grep
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias agrep='ack-grep --color'
-
 # Dig aliases
 alias digs='dig +short'
 alias digc='dig +short CNAME'
@@ -72,6 +65,7 @@ alias digmx='dig +short MX'
 alias rm='rm -vi'
 
 # Auto extension stuff
+# Suffix
 alias -s {ogg,mp3,wav,wma}="mplayer"
 alias -s {avi,mpeg,mpg,mov,m2v,flv}="mplayer"
 alias -s {png,gif,jpg,jpeg}="gthumb"
@@ -87,3 +81,14 @@ alias mysql='nocorrect mysql'
 alias mkdir='nocorrect mkdir'
 alias sudo='nocorrect sudo'
 alias git='nocorrect git'
+alias ack='nocorrect ack'
+
+# Global
+alias -g G="| grep -i --color=auto"
+alias -g EG="| egrep -i --color=auto"
+alias -g L='| less'
+alias -g S='| sort'
+alias -g X='| xargs'
+alias -g T='| tail'
+alias -g C='| wc -l'
+alias -g D="DISPLAY=:0.0"
