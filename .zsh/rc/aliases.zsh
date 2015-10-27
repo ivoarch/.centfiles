@@ -68,11 +68,12 @@ alias rm='rm -vi'
 # Suffix
 alias -s {ogg,mp3,wav,wma}="mplayer"
 alias -s {avi,mpeg,mpg,mov,m2v,flv}="mplayer"
-alias -s {png,gif,jpg,jpeg}="gthumb"
-alias -s {doc,pdf}="$EDITOR"
+alias -s {jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}="open"
+alias -s {doc,pdf}="open"
 alias -s {txt,c,h,conf,tex}="$EDITOR"
-alias -s {html,php,com,net,org,gov}="$BROWSER"
-alias -s torrent='transmission-gtk'
+alias -s {html,php,com,net,org,gov,io}="$BROWSER"
+alias -s torrent='open'
+alias -s {gz,tgz,zip,lzh,bz2,tbz,Z,tar,arj,xz}="extract"
 
 # No correct commands
 alias man='nocorrect man'
@@ -82,6 +83,9 @@ alias mkdir='nocorrect mkdir'
 alias sudo='nocorrect sudo'
 alias git='nocorrect git'
 alias ack='nocorrect ack'
+alias cp="nocorrect cp"
+alias mcd="nocorrect mcd"
+alias rm="nocorrect rm"
 
 # Global
 alias -g G="| grep -i --color=auto"
