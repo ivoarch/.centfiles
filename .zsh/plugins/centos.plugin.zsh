@@ -41,6 +41,7 @@ alias rpmsize="rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | 
 alias build='rpmbuild --ba'
 alias rebuild='rpmbuild --rebuild'
 alias sign='rpm --addsign'
+alias builddep='yum-builddeb'
 
 # Scan for duplicates
 alias dupes='rpm -qa | sort | uniq -d'
