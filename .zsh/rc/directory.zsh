@@ -5,6 +5,7 @@ setopt auto_pushd              # Push the old directory onto the stack on cd.
 setopt auto_name_dirs          # Auto add variable-stored paths to ~ list.
 setopt pushd_ignore_dups       # Do not store duplicates in the stack.
 
+alias - = "cd -"
 alias ..='cd ..'
 alias cd..='cd ..'
 alias cd...='cd ../..'

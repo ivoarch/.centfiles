@@ -7,7 +7,6 @@ export PGPPATH="$HOME/.gnupg"
 export PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$HOME/bin"
 export XDG_CONFIG_HOME="$HOME/.config"
 export BROWSER="firefox"
-OS=$(uname -s); export OS
 
 # default env vars (if not set)
 if [[ -z "$TERM" ]]; then
@@ -19,7 +18,6 @@ if [[ -z "$EDITOR" ]]; then
 fi
 
 export DISPLAY=":0.0"
-export MANWIDH="80"
 
 # Setup Go
 export GOROOT=$HOME/.go
