@@ -2,14 +2,6 @@
 # ZSHELL aliases
 #
 
-# Push and pop directories on directory stack
-alias pu='pushd'
-alias po='popd'
-
-# copy current working directory to clipboard
-alias cwd="pwd | tr -d '\n' | xsel -b"
-alias copy="xsel -b"
-
 # Compile/Sources
 alias cm='./configure && make'
 alias mmi='make && sudo make install'
