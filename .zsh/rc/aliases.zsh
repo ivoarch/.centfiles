@@ -47,12 +47,6 @@ alias ll='ls -lh'
 alias l='ls -lh'
 alias lr='ls -lR'
 
-# Dig aliases
-alias digs='dig +short'
-alias digc='dig +short CNAME'
-alias digns='dig +short NS'
-alias digmx='dig +short MX'
-
 # make rm verbose and ask for confimation before deletion
 alias rm='rm -vi'
 
