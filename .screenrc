@@ -1,20 +1,40 @@
+# Turn welcome message off
 startup_message off
-
+# Use 256 colors
 term "screen-256color"
 # terminfo and termcap for nice 256 color terminal
 # allow bold colors - necessary for some reason
-attrcolor b ".I" 
-# tell screen how to set colors. AB = background, AF=foreground 
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
-# erase background with current bg color 
+attrcolor b ".I"
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# Use X scrolling mechanism
+termcapinfo xterm* ti@:te@
+# erase background with current bg color
 defbce "on"
-
+# disable vbell
 vbell off
+# message display time (seconds)
+msgwait 2
+# Increase the scrollback buffer
 defscrollback 10000
-hardstatus off
-screen
-screen -t radio
-select 1
-
+# windows, time, date -always on line:
+#hardstatus off
+hardstatus alwayslastline "Screen: %-Lw%{= bw}%50>%n%f* %t%{-}%+Lw%<%=%{kw}%H: %D/%M/%d %C"
+# Change the window size to the size of the current region
+fit
+# Fix for residual text
 altscreen on
+# highlighting for text marking and printing messages.
+#sorendition = Wk
+# Create initial windows
+screen -t zsh
+screen -t radio
+screen -t mock su - mockbuild
+# New windows start at 1
+select 0
+# Escape key
 escape ^Zz
+# Hide hardstatus: ctrl-z f
+bind f eval "hardstatus ignore"
+# Show hardstatus: ctrl-z F
+bind F eval "hardstatus alwayslastline"
